@@ -5,15 +5,22 @@
 
     h1{
         font-size: @title-size;
+        padding: 10px;
     }
     nav{
-        padding: 10px;
+        
         display: flex;
+        justify-content: space-evenly;
+        max-width: 100%;
+
         a{
             font-size: 1.9rem;
             margin: 10px;
             text-decoration: none;
             color: @ebony-clay;
         }
+    }
+    @media @phone {
+        background: @wild-sand;
     }
 }
