@@ -85,10 +85,16 @@
 
       .btn {
         .btn-style(27%, 3px solid black, @ebony-clay, 5px, 9%, white, 1.8rem, center);
+
+
         &:hover{
           background-color: white;
           color: @ebony-clay;
         }
+        &:active{
+          transform: translateY(5px);
+        }
+       
         @media @phone {
           .width-shift();
           height: 20%;
