@@ -1,13 +1,15 @@
 // Mixins Here
-.center(@justify, @align){
+.center(@justify, @align) {
     display: flex;
     justify-content: @justify;
     align-items: @align;
 }
-.direction(@flex-direction){
+
+.direction(@flex-direction) {
     flex-direction: @flex-direction;
 }
-.btn-style(@width, @border, @background, @border-radius, @height, @color, @font-size, @text-align){
+
+.btn-style(@width, @border, @background, @border-radius, @height, @color, @font-size, @text-align) {
     width: @width;
     border: @border;
     background: @background;
@@ -17,12 +19,25 @@
     font-size: @font-size;
     text-align: @text-align;
 }
-.width-shift(){
+
+.width-shift() {
     width: 100%;
 }
-@keyframes color-shift{
-    0% {background-color: @border-real; }
-    25% {background-color: @wild-sand;}
-    50% {background-color: @waterloo;}
-    100% {background-color: @border-real;}
+
+@keyframes color-shift {
+    0% {
+        background-color: @border-real;
+    }
+
+    25% {
+        background-color: @wild-sand;
+    }
+
+    50% {
+        background-color: @waterloo;
+    }
+
+    100% {
+        background-color: @border-real;
+    }
 }
